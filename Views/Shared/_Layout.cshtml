@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+    <div class="footer">
+   	  <div class="wrapper">	
+	     <div class="section group">
+				<div class="col_1_of_4 span_1_of_4">
+						<h4>Information</h4>
+						<ul>
+						<li><a href="/Home/about">About Us</a></li>
+						<li><a href="#"><span>Advanced Search</span></a></li>
+						<li><a href="/Home/contact"><span>Contact Us</span></a></li>
+						</ul>
+		   </div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>My account</h4>
+						<ul>
+							<li><a href="/Home/login">Sign In</a></li>
+							<li><a  href="/Home/cart">View Cart</a></li>
+							<li><a  href="/Home/contact">Help</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>My account</h4>
+						<ul>
+							<li><a href="/Home/login">Sign In</a></li>
+							<li><a  href="/Home/cart">View Cart</a></li>
+							<li><a  href="/Home/contact">Help</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>Contact</h4>
+						<ul>
+							<li><span>03234085246</span></li>
+							<li><span>+923234085246</span></li>
+				  </ul>
+						<ul class="social-icons">
+						  <h4>Follow Us</h4>
+					   		
+							      <li class="facebook"><a href="https://www.facebook.com/" target="_blank"> </a></li>
+							      <li class="twitter"><a href="https://www.tiwitter.com/" target="_blank"> </a></li>
+							      <li class="googleplus"><a href="https://www.google.com.pk/" target="_blank"> </a></li>
+							      <li class="contact"><a href="https://mail.google.com/mail/" target="_blank"> </a></li>
+							      <div class="clear"></div>
+						     </ul>
+			 </div>
+		</div>	
+  </div>
+</div>
+</body>
+</html>

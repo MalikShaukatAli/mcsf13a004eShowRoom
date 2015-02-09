@@ -1,0 +1,81 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE HTML>
+<head>
+<title>eShowRoom</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="~/Content/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="~/Content/slider.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="~/Content//menu.css" rel="stylesheet" type="text/css" media="all"/>
+<link href='http://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="~/Script/move-top.js"></script>
+<script type="text/javascript" src="~/Script/easing.js"></script>
+<script src="~/Script/script.js" type="text/javascript"></script>
+<script type="text/javascript" src="~/Script/jquery-1.7.2.min.js"></script> 
+<script type="text/javascript" src="~/Script/nav.js"></script>
+<script type="text/javascript" src="~/Script/nav-hover.js"></script>
+<script type="text/javascript">
+  $(document).ready(function($){
+    $('#dc_mega-menu-orange').dcMegaMenu({rowItems:'4',speed:'fast',effect:'fade'});
+  });
+</script>
+<style type="text/css">
+<!--
+.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style3 {color: #FF0000}
+.style4 {
+	font-size: larger;
+	color: #CCCC00;
+}
+.style7 {color: #9933FF}
+.style8 {
+	font-size: larger;
+	font-weight: bold;
+}
+.style9 {color: #0000FF}
+-->
+</style>
+</head>
+<body>
+  <div class="wrap">
+	<div class="header">
+		<div class="header_top">
+			<div class="logo">
+				<div align="center" style="font-size:30px"><span class="style8"><a href="index.html" class="style4">e</a><span class="style9">Show<span class="style7">Room			</span></span></span></div>
+			</div>
+			  <div class="header_top_right">
+			    <div class="search_box">
+				    <form action="/Home/Add5" method="get">
+				    	<input type="text" name="search" value="Search for Products" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search for Products';}"><input type="submit" value="SEARCH">
+				    </form>
+			    </div>
+			    <div class="languages"></div>
+			<div class="currency">
+			 
+   </div>
+		   <div class="login">
+		   	   <span><a href="/Home/login"><img src="~/images/login.png" alt="" title="login"/> login</a></span>
+		   </div>
+		   <div class="clear"></div>
+	   </div>
+	 <div class="clear"></div>
+   </div>
+	<div class="menu">
+	  <ul id="dc_mega-menu-orange" class="dc_mm-orange">
+		 <li><a href="/Home/index">Home</a></li>
+    <li><a href="/Home/products">New Vehicles </a>
+     
+  </li>
+  <li ><a href="/Home/p">Old Vehicles</a>  </li>
+   <li><a href="/Home/C">Upload Vehicle</a></li>
+   <li><a href="/Home/cart">View Cart</a></li>
+  <li><a  href="/Home/about">About</a></li>
+ <li><a  href="/Home/contact">Contact</a> </li>

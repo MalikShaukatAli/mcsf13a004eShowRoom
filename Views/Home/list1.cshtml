@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "list1";
+}
+<body>
+  <div class="clear"></div>
+    </ul>
+</div><div>
+ <div class="main">
+    <div class="content">
+    	<div class="content_top">
+    	  <div class="back-links">
+   	      </div>
+    		<div class="clear"></div>
+   	  </div>
+				<div style="text-align:center;font-family:'Chiller';font-size:80px;color:#2f8a1d;border:solid #2f8a1d 19px ;background-color:#172176">
+                    <h1 style="text-align:center">Thanks for shpping here</h1>
+                    <div style="text-align:center;font-family:'Chiller';font-size:40px;color:#854092">
+                    @foreach(var s in Model)
+                    {
+                        <h3>Your are Purchased @s.quantity number of product</h3><p>&nbsp;</p>
+                    }
+                     @foreach(var s in Model)
+                    {
+                   <h3>The list of your product is @s.vname</h3><p>&nbsp;</p>
+                    }
+                      @foreach(var s in Model)
+                    {
+                      <h3>And your total balance is $  @s.total1</h3><p>&nbsp;</p>
+                    }
+                    </div></div>
+                 <img src="~/images/86a.png" alt="" width="2200" height="600" style="float:inherit" />					</>
+        	      <p><span></span></p>
+				  </div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="product-desc">
+			</div>
+	    <div class="product-tags">
+			<h2>&nbsp;</h2>
+		  <div class="input-box"></div>
+			<div class="button"></div>
+	    </div>				
+	</div>
+</body>
+
